@@ -1,7 +1,7 @@
 #include <stdio.h>
 void main() {
 	int rot,n,rem,shif;
-	scanf("%d %d",&n,&rot);
+	scanf("%d%d",&n,&rot);
 	while(rot>0)
 	{
 	    rem=n%10000;
