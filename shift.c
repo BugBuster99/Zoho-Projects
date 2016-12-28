@@ -1,6 +1,6 @@
 #include <stdio.h>
 void main() {
-	int rot,n,rem,shif;
+	int rot,n,rem,shif,iter;
 	scanf("%d%d",&n,&rot);
 	rot=rot%5;
 	iter=5-rot;
