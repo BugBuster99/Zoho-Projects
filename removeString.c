@@ -15,7 +15,7 @@ int main(void) {
 	    }
 	}
 	
-	    printf("%c",s1);
+	    printf("%s",s1);
 	
 	return 0;
 }
