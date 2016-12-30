@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main(){
-    int m,n,i,j;
+    int m,n,i,j,k;
     scanf("%d%d%d",&m,&n,&k);
     int a[m][n];
     for(i=0;i<m;i++){
