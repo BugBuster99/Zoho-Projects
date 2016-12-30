@@ -14,9 +14,9 @@ int main(void) {
 	        }
 	    }
 	}
-	for(i=0;i<j;i++){
-	    printf("%c",s1[i]);
-	}
+	
+	    printf("%c",s1);
+	
 	return 0;
 }
 
