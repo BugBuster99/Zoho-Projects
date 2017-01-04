@@ -2,10 +2,9 @@
 
 int main(void) {
 	int i,j,total,count,n;
-	count=0;
 	scanf("%d",&n);
 	total=n*n;
-	count=0;
+	count=1;
 
 	int a[n][n];
 	for(i=0;i<n;i++){
