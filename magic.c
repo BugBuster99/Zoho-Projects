@@ -31,7 +31,12 @@ int main(void) {
 	        if(j<0){
 	            j=n-1;
 	        }
+	        if((i+2)>(n-1)){
 	        i=(i+2)%n;
+	        }
+	        else{
+	            i+=2;
+	        }
 	    }
 	    count++;
 	}
