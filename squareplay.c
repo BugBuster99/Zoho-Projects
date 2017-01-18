@@ -33,6 +33,7 @@ void main()
 		}
 		printf("\n");
 	}	
+	printf("-------------------");
 	while (ch!='Q')
 	{
 		printf("\n\nU-up D-down L-left R-right\nEnter Your choice:");
@@ -51,7 +52,7 @@ void main()
 			a[i][j]=' ';
 			break;
 			case 'L':
-			a[i][j]=a[i][(j-1))];
+			a[i][j]=a[i][(j-1)];
 			j=j-1;
 			a[i][j]=' ';
 			break;
@@ -78,6 +79,7 @@ void main()
 	    	    }
 		    }
 		    printf("\n");
-	    }	
+	    }
+	printf("-------------------");	    
 	}
 }		
