@@ -19,15 +19,16 @@ void main()
 	a[i][j]=' ';
     for(k=0;k<4;k++)
 	{
+	    printf("-------------------\n|");
 		for(l=0;l<4;l++)
 		{
 		    if(a[k][l]==32)
 		    {
-		        printf("%c\t",a[k][l]);
+		        printf(" %c |",a[k][l]);
 		    }
 		    else
 		    {
-			    printf("%d\t",a[k][l]);
+			    printf(" %d |",a[k][l]);
 		    }
 		}
 		printf("\n");
@@ -63,19 +64,20 @@ void main()
 			break;			
 		}
         for(k=0;k<4;k++)
-		{
-			for(l=0;l<4;l++)
-			{
-			    if(a[k][l]==32)
-			    {
-			        printf("%c\t",a[k][l]);
-			    }
-			    else
-			    {
-				    printf("%d\t",a[k][l]);
-			    }
-			}
-			printf("\n");
-		}
+	    {
+	        printf("-------------------\n|");
+    		for(l=0;l<4;l++)
+    		{
+    		    if(a[k][l]==32)
+	    	    {
+		            printf(" %c |",a[k][l]);
+		        }
+    		    else
+    		    {
+	    		    printf(" %d |",a[k][l]);
+	    	    }
+		    }
+		    printf("\n");
+	    }	
 	}
 }		
