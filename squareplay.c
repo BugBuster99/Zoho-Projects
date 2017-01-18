@@ -13,26 +13,27 @@ void main()
 			i++;
 		}
 	}
+	
 	i=3;
 	j=3;
 	a[i][j]=' ';
-	do 
+    for(k=0;k<4;k++)
 	{
-		for(k=0;k<4;k++)
+		for(l=0;l<4;l++)
 		{
-			for(l=0;l<4;l++)
-			{
-			    if(a[k][l]==32)
-			    {
-			        printf("%c\t",a[k][l]);
-			    }
-			    else
-			    {
-				    printf("%d\t",a[k][l]);
-			    }
-			}
-			printf("\n");
+		    if(a[k][l]==32)
+		    {
+		        printf("%c\t",a[k][l]);
+		    }
+		    else
+		    {
+			    printf("%d\t",a[k][l]);
+		    }
 		}
+		printf("\n");
+	}	
+	while (ch!='Q')
+	{
 		printf("\n\nU-up D-down L-left R-right\nEnter Your choice:");
 		scanf("%c",&ch);
 		printf("\n");
@@ -61,5 +62,20 @@ void main()
 			case 'Q':
 			break;			
 		}
-	}while(ch != 'Q');
-}
+        for(k=0;k<4;k++)
+		{
+			for(l=0;l<4;l++)
+			{
+			    if(a[k][l]==32)
+			    {
+			        printf("%c\t",a[k][l]);
+			    }
+			    else
+			    {
+				    printf("%d\t",a[k][l]);
+			    }
+			}
+			printf("\n");
+		}
+	}
+}		
