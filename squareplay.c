@@ -41,23 +41,23 @@ void main()
 		switch(ch)
 		{
 			case 'U':
-			a[i][j]=a[i%4-1][j];
-			i=i%4-1;
+			a[i][j]=a[3-(i%4)][j];
+			i=3-(i%4);
 			a[i][j]=' ';
 			break;
 			case 'D':
-			a[i][j]=a[i%4+1][j];
-			i=i%4+1;
+			a[i][j]=a[(i+1)%4][j];
+			i=(i+1)%4;
 			a[i][j]=' ';
 			break;
 			case 'L':
-			a[i][j]=a[i][j%4-1];
-			j=j%4-1;
+			a[i][j]=a[i][3-(j%4)];
+			j=3-(j%4);
 			a[i][j]=' ';
 			break;
 			case 'R':
-			a[i][j]=a[i][j%4+1];
-			j=j%4+1;
+			a[i][j]=a[i][(j+1)%4];
+			j=(j+1)%4;
 			a[i][j]=' ';
 			break;
 			case 'Q':
