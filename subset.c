@@ -12,7 +12,7 @@ int main(void) {
 	{
 	    for(j=i;j<n;j++)
 	    {
-	        for(k=i;k<j;k++)
+	        for(k=i;k<=j;k++)
 	        {
 	            printf("%d,",a[k]);
 	        }
