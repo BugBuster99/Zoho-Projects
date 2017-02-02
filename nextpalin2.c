@@ -35,7 +35,7 @@ int pal(int *a,int len)
 int main(void) {
 	int n,x,flag,len,i,j;
 	scanf("%d",&n);                         
-	x=n;
+	x=n+1;                          //x=n+1 overcomes corner testcases like 99 and 999
 	flag=0;
 	len=0;                                  //initializing flag and length of array as zero
 	while(x>0)
@@ -43,7 +43,7 @@ int main(void) {
 	    len+=1;                             //length of array is calculated
 	    x=x/10;
 	}
-	x=n;
+	x=n+1;
 	int a[len];
 	for(i=(len-1);i>=0;i--)
 	{
