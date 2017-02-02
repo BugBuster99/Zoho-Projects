@@ -8,7 +8,7 @@ int pal(int *a,int len)
     {
         if(a[i]==10)
         {
-            a[i]=0;
+            a[i]=0;                     // The 2 if statements check for corner test cases and correct them
             a[i-1]+=1;
         }
         if(a[j]==10)
@@ -19,7 +19,7 @@ int pal(int *a,int len)
         if(a[i]==a[j])
         {
             i++;
-            j--;
+            j--;                        // The array elements are modified as per logic
         }
         else if(a[i]>a[j])
         {
@@ -34,44 +34,45 @@ int pal(int *a,int len)
 }    
 int main(void) {
 	int n,x,flag,len,i,j;
-	scanf("%d",&n);
+	scanf("%d",&n);                         
 	x=n;
 	flag=0;
-	len=0;
+	len=0;                                  //initializing flag and length of array as zero
 	while(x>0)
 	{
-	    len+=1;
+	    len+=1;                             //length of array is calculated
 	    x=x/10;
 	}
 	x=n;
 	int a[len];
 	for(i=(len-1);i>=0;i--)
 	{
-	    a[i]=(x%10);
+	    a[i]=(x%10);                        //the digits of the number are stored in array in order
 	    x=x/10;
 	}
 	while(flag==0)
 	{
-	    pal(&a,len);
+	    pal(&a,len);                        //function call to modify the elements to form palindrome
 	    for(i=0,j=len-1;i<=j;i++,j--)
 	    {
 	        flag=1;
-	        if(a[i]!=a[j])
+	        if(a[i]!=a[j])                  //check if the palindrome number is generated. 
 	        {
 	            flag=0;
-	            break;
+	            break;                      //the flag is not set until the palindrome generated
 	        }
 	    }
 	    if(flag==1)
-	    {
+	    {   x=0;
 	        for(i=0;i<len;i++)
 	        {
-	            printf("%d",a[i]);
+	            x=(x*10)+a[i];          //final palindrome is rendered from the array
 	        }
 	        break;
 	    }
 	    
 	}
+	printf("%d",x);
 	return 0;
 }
 
