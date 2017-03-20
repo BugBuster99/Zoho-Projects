@@ -4,7 +4,7 @@ int main(void) {
 	// your code goes here
 	int i,j,k,size,m1,m2;
 	scanf("%d",&size);                          //Get the size of array
-	int a[size];
+	int a[100];
 	for(i=0;i<size;i++)
 	{
 	    scanf("%d",&a[i]);                      //Getting the array elements
