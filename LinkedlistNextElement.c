@@ -59,7 +59,7 @@ void check(struct node* head,int n){
     
     if(traverser->next==NULL)
     {
-        printf("there is no element present next to this node");
+        printf("\nThere is no element present next to this node");
     }
     else 
     {
