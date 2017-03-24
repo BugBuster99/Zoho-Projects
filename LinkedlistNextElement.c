@@ -57,11 +57,7 @@ void check(struct node* head,int n){
         count++;
     }
     
-    if(flag!=0)
-    {
-        printf("Element Not Found!!!");		//If the value is not found then this part is executed
-    }
-    else if(traverser->next==NULL)
+    if(traverser->next==NULL)
     {
         printf("there is no element present next to this node");
     }
